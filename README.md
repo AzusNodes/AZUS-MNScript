@@ -36,11 +36,10 @@ This guide will assist you in setting up a AZUS Masternode on a Linux Server run
 - ```git clone https://github.com/AzusNodes/AZUS-MNScript.git```  
 
 ##### 4. Start MN setup script: 
-##### For Ubuntu 18.04
-- ```cd AZUS-MNScript && chmod +x ./AZUS-18.04-MN.sh && ./AZUS-18.04-MN.sh```
 
-##### For Ubuntu 20.04
-- ```cd AZUS-MNScript && chmod +x ./AZUS-20.04-MN.sh && ./AZUS-20.04-MN.sh```
+##### For Ubuntu 18.04 / 20.04
+- ```cd AZUS-MNScript && chmod +x ./AZUS-MN.sh && ./AZUS-MN.sh```
+
    
 **Now ask for VPS Public IP Address** 
 
@@ -73,3 +72,19 @@ This guide will assist you in setting up a AZUS Masternode on a Linux Server run
 - ```azus-cli getmasternodestatus```  
 
 **Сongratulations you did it!**
+
+# Guide for AZUS v1.0.1 MasterNode Update:
+The instructions below are designed for users currently running an older version of AZUS v1.0.0 need update to v1.0.1
+
+For **Ubuntu 18.04 / 20.04**
+```
+wget -q https://raw.githubusercontent.com/AzusNodes/AZUS-MNScript/main/azus-mn-update.sh
+
+sudo chmod +x azus-mn-update.sh
+
+./azus-mn-update.sh
+```
+
+
+
+***
