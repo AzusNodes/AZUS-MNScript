@@ -1,5 +1,5 @@
 #!/bin/bash
-# AZUS Masternode Setup Script V1.0.1 for Ubuntu LTS
+# AZUS Masternode Setup Script V1.1.0 for Ubuntu LTS
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -47,7 +47,7 @@ function stop_daemon {
 genkey=$1
 clear
 
-echo -e "${GREEN} ------- AZUS MASTERNODE INSTALLER V1.0.1--------+
+echo -e "${GREEN} ------- AZUS MASTERNODE INSTALLER V1.1.0--------+
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
@@ -130,8 +130,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/azus*
-wget https://github.com/AzusNodes/AZUS-MNScript/releases/download/v1.0.1/azus-1.0.1-ubuntu-daemon.tar.gz
-tar -xzvf azus-1.0.1-ubuntu-daemon.tar.gz
+wget https://github.com/AzusNodes/AZUS-MNScript/releases/download/v1.1.0/azus-1.1.0-ubuntu-daemon.tar.gz
+tar -xzvf azus-1.1.0-ubuntu-daemon.tar.gz
 sudo chmod -R 755 azus-cli
 sudo chmod -R 755 azusd
 cp -p -r azusd /usr/local/bin
@@ -179,7 +179,7 @@ done
     azus-cli stop
     sleep 5
 cd ~/.azus && rm -rf blocks chainstate sporks zerocoin
-cd ~/.azus && wget https://github.com/AzusNodes/AZUS-MNScript/releases/download/v1.0.1/bootstrap.zip
+cd ~/.azus && wget https://github.com/AzusNodes/AZUS-MNScript/releases/download/v1.1.0/bootstrap.zip
 cd ~/.azus && unzip bootstrap.zip
 sudo rm -rf ~/.azus/bootstrap.tar.gz
 

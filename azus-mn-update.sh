@@ -20,7 +20,7 @@ function stop_daemon {
 }
 
 
-echo "Your AZUS Masternode Will be Updated To The Latest Version v1.0.1 Now" 
+echo "Your AZUS Masternode Will be Updated To The Latest Version v1.1.0 Now" 
 sudo apt-get -y install unzip
 
 #remove crontab entry to prevent daemon from starting
@@ -30,10 +30,10 @@ crontab -l | grep -v 'azusauto.sh' | crontab -
 stop_daemon
 
 rm -rf /usr/local/bin/azus*
-mkdir AZUS_1.0.1
-cd AZUS_1.0.1
-wget https://github.com/AzusNodes/AZUS-MNScript/releases/download/v1.0.1/azus-1.0.1-ubuntu-daemon.tar.gz
-tar -xzvf azus-1.0.1-ubuntu-daemon.tar.gz
+mkdir AZUS_1.1.0
+cd AZUS_1.1.0
+wget https://github.com/AzusNodes/AZUS-MNScript/releases/download/v1.1.0/azus-1.1.0-ubuntu-daemon.tar.gz
+tar -xzvf azus-1.1.0-ubuntu-daemon.tar.gz
 mv azusd  /usr/local/bin/azusd 
 mv azusd-cli /usr/local/bin/azusd-cli
 chmod +x /usr/local/bin/azus*
@@ -43,11 +43,11 @@ rm -rf ~/.azus/sporkssporks
 rm -rf ~/.azus/zerocoin
 rm -rf ~/.azus/peers.dat
 cd ~/.azus/
-wget https://github.com/AzusNodes/AZUS-MNScript/releases/download/v1.0.1/bootstrap.zip
+wget https://github.com/AzusNodes/AZUS-MNScript/releases/download/v1.1.0/bootstrap.zip
 unzip bootstrap.zip
 
 cd ..
-rm -rf ~/.azus/bootstrap.zip ~/AZUS_1.0.1
+rm -rf ~/.azus/bootstrap.zip ~/AZUS_1.1.0
 
 # add new nodes to config file
 sed -i '/addnode/d' ~/.azus/azus.conf

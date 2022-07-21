@@ -73,8 +73,8 @@ This guide will assist you in setting up a AZUS Masternode on a Linux Server run
 
 **Сongratulations you did it!**
 
-# Guide for AZUS v1.0.1 MasterNode Update:
-The instructions below are designed for users currently running an older version of AZUS v1.0.0 need update to v1.0.1
+# Guide for AZUS v1.1.0 MasterNode Update:
+The instructions below are designed for users currently running an older version of AZUS v1.0.0 need update to v1.1.0
 
 For **Ubuntu 18.04 / 20.04**
 ```
