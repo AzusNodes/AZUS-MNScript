@@ -1,5 +1,5 @@
-# AZUS Masternode Setup (Ubuntu 18.04 / 20.04)
-This guide will assist you in setting up a AZUS Masternode on a Linux Server running Ubuntu 18.04 / 20.04
+# AZUS Masternode Setup (Ubuntu 16.04/18.04/20.04)
+This guide will assist you in setting up a AZUS Masternode on a Linux Server running Ubuntu 16.04/18.04/20.04
 
 - [AZUS Masternode Setup](#azus-masternode-setup)  
   	* [Requirements](#requirements) 
@@ -20,7 +20,7 @@ This guide will assist you in setting up a AZUS Masternode on a Linux Server run
 
 ## Requirements
 - MN Collateral amount of AZUS coins.
-- A VPS running Linux Ubuntu 18.04 or 20.04 with 1 CPU & 1GB Memory minimum (2gb Recommended) from [Vultr](https://www.vultr.com/?ref=8622028) or any other providers.
+- A VPS running Linux Ubuntu 16.04 or 18.04 or 20.04 with 1 CPU & 1GB Memory minimum (2gb Recommended) from [Vultr](https://www.vultr.com/?ref=8622028) or any other providers.
 - AZUS Wallet (Local Wallet)
 - An SSH Client (<a href="https://www.putty.org/" target="_blank">Putty</a> or <a href="https://dl.bitvise.com/BvSshClient-Inst.exe" target="_blank">Bitvise</a>)
 
@@ -36,6 +36,10 @@ This guide will assist you in setting up a AZUS Masternode on a Linux Server run
 - ```git clone https://github.com/AzusNodes/AZUS-MNScript.git```  
 
 ##### 4. Start MN setup script: 
+
+##### For Ubuntu 16.04
+- ```cd AZUS-MNScript && chmod +x ./AZUS-16.04-MN.sh && ./AZUS-16.04-MN.sh```
+
 
 ##### For Ubuntu 18.04 / 20.04
 - ```cd AZUS-MNScript && chmod +x ./AZUS-MN.sh && ./AZUS-MN.sh```
@@ -75,6 +79,17 @@ This guide will assist you in setting up a AZUS Masternode on a Linux Server run
 
 # Guide for AZUS v1.1.0 MasterNode Update:
 The instructions below are designed for users currently running an older version of AZUS v1.0.0 need update to v1.1.0
+
+
+For **Ubuntu 16.04**
+```
+wget -q https://raw.githubusercontent.com/AzusNodes/AZUS-MNScript/main/azus-16.04-mn-update.sh
+
+sudo chmod +x azus-16.04-mn-update.sh
+
+./azus-16.04-mn-update.sh
+```
+
 
 For **Ubuntu 18.04 / 20.04**
 ```
